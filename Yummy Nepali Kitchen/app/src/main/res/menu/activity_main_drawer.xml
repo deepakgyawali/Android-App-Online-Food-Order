@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Created by www.deepakgyawali.com.np on 28/11/2017. -->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ourspecial"
+            android:title="Our Special"
+            />
+        <item
+            android:id="@+id/nav_appetizers"
+            android:icon="@drawable/appetizers"
+            android:title="Appetizers" />
+
+        <item
+            android:id="@+id/nav_maincourse"
+            android:icon="@drawable/maincourse"
+            android:title="Main Course" />
+
+        <item
+            android:id="@+id/nav_desserts"
+            android:icon="@drawable/desserts"
+            android:title="Desserts" />
+
+        <item
+            android:id="@+id/nav_drinks"
+            android:icon="@drawable/drinks"
+            android:title="Drinks" />
+        <item
+            android:id="@+id/nav_deals"
+            android:icon="@drawable/deals"
+            android:title="Deals" />
+    </group>
+
+    <item android:title="Account Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

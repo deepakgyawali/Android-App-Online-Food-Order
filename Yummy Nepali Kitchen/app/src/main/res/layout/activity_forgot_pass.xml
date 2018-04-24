@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    tools:context="com.deepak.yummynepalikitchen.ForgotPassActivity">
+    <!-- Created by www.deepakgyawali.com.np on 28/11/2017. -->
+    <TextView
+        android:id="@+id/FPTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="FORGOT MY PASSWORD"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FPTitle"
+        android:hint="Username"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/newPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameET"
+        android:layout_marginTop="8dp"
+        android:hint="New Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/reenterNewPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newPasswordET"
+        android:layout_marginTop="8dp"
+        android:hint="Re-enter New Password"
+        android:textSize="15sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/setAsNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET AS NEW PASSWORD"
+        android:textSize="16sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_below="@id/reenterNewPasswordET"
+        android:layout_marginTop="8dp"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to Login Page"
+        android:textSize="16sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_below="@id/setAsNewPassword"
+        android:layout_marginTop="5dp"
+        android:clickable="true"/>
+</RelativeLayout>
